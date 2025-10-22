@@ -1,0 +1,7 @@
+express js is a web application framework for nodde.js
+ it is simplifies bulding web servers and APIs in node.js 
+
+ routing
+ middleware
+ rest api support
+ template engiens

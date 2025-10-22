@@ -1,0 +1,28 @@
+
+const http = require('http')
+
+const usersData = [
+    {
+        name:"ruchi",
+        age:22,
+        email:"02ruchi2002@gmail.com"
+    },
+        {
+        name:"robin",
+        age:21,
+        email:"robinKumar@gmail.com"
+    },
+        {
+        name:"vicky",
+        age:29,
+        email:"shawVicky@gmail.com"
+    },
+]
+
+http.createServer((request,response)=>{
+    response.setHeader("Content-Type",'application/json');
+    response.write(JSON.stringify(usersData));
+  response.end();
+}).listen(4300,()=>{
+    console.log("server is runing ")
+})

@@ -1,0 +1,18 @@
+
+
+middlewear is the function in express js that runs before the final route handler
+
+benifites 
+1. modifies Request
+2. centerlized logic
+3. auth
+4. third party support
+5.  static file handling
+6. 404 page handling
+
+types of middlewear
+1. application level     app.user() / app.get()
+2. router level          router.use()
+3 .bultin middleware
+4. error handling        (err,req,res,next)
+5. third party

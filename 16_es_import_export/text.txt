@@ -1,0 +1,13 @@
+1. use EcmaScript import export in node.js
+
+2. render html element in nodejs 
+
+3. render  html file in nodejs
+
+jaise hum react mai import export krte h kisi module ko waise hum 
+nodejs mai kaise krekyu ki node.js mai alag way h require ka use kre k
+to iske k liya hume package.json file mai kuch change krna hoga
+tab hum react ki tarh node.js mai bhi import export kr paynge
+
+hume package.json file mai ek "type" key ki default value "common" hota h
+isko hata k "module" likhna hoga iss k baad hum ES export import kr sakte h node.js mai
