@@ -1,0 +1,33 @@
+
+[
+    {
+        "id":1,
+        "name":"pooja",
+        "age":30,
+        "email":"poooja434@gmail.com"
+
+
+    },
+        {
+        "id":2,
+        "name":"nikita",
+        "age":30,
+        "email":"nikita4125@gmail.com"
+
+
+    },
+        {
+        "id":3,
+        "name":"palak",
+        "age":30,
+        "email":"shawPalak@gmail.com"
+
+
+    },
+        {
+        "id":4,
+        "name":"nitya",
+        "age":30,
+        "email":"nitya434@gmail.com"
+    }
+]

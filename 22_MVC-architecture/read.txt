@@ -1,0 +1,16 @@
+    MVC 
+
+M = modules                  1.  represt your data in your code
+                             2. work with your data
+
+V = views                    1. what the user see
+                             2. 
+                             3. .ejs files
+
+C = controllers / routes     1. connecting your modules and views
+                             2. 
+
+
+
+
+user => controller => model => view => user

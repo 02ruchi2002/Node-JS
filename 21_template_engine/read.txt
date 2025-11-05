@@ -1,0 +1,11 @@
+
+create dynamic web pages by merging html templates with data from the server.
+
+1. EJS (Embendded javascript)     =>   npm i ejs                        file extension .ejs not .js
+2. Pug (formerly jade)
+3. handlebars
+
+
+
+
+node.js se hume kuch data pass krwana h or html file mai dhikhana h to  iske usse kr k kr sakte h 

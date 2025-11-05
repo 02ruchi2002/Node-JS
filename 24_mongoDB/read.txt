@@ -1,0 +1,47 @@
+Mongo DB   ( Data Base )         like MYSQL database
+
+1)  What is Database  ?
+
+A database is a stuctured collection of data
+
+This is stored and organized in a way that make it easy to retrieve, manage and update 
+
+2)  Types of database  ?
+
+   1. Relational database   (RDBMS)
+   2. NoSQL database   (MongoDB)
+
+
+3) what is MongoDB ?
+
+MongoDB is NoSQL database.
+It is stores data in flexible (no tabel format)
+JSON-like format called BSON (Binary JSON)
+
+
+_____________________________________________Basic Command of MongoDB ON TERMINAL___________________________________________________________
+
+1. mongosh               to go inside mongo shell
+
+2. show dbs              show list of databases
+
+3. use databaseName  eg =>(college)       to create new databsae and switch on it
+
+4. db.createCollection("eg => students")
+
+5. show collections              
+
+6.  (a) db.databaseName.insertOne({})
+    (b) db.databaseName.insertMany()
+
+  eg =>  db.students.insertOne({'name':"nikita",'age':21,'email':"nikital@gmail.com"})
+
+
+7. db.databaseName.find()                 to show collections of database
+
+
+8. db.databaseName.updateOne({'name':'nitya'},{$set:{'age':20}})               update data             age
+
+9. db.databaseName.drop()                         to delete database
+
+10 db.dropDatabase()
