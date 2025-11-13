@@ -8,7 +8,7 @@ app.get("/",(req,resp)=>{
 
 
 // bultin middleware iss se hum req ki body get kr sakte h iss k bina hum input k text nhi get kr sakte 
-// app.use(express.urlencoded({extended:false}))
+app.use(express.urlencoded({extended:false}))
 
 app.get("/login",(req,resp)=>{
    resp.send(`\

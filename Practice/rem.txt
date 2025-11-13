@@ -1,0 +1,53 @@
+_______________ query params ? 
+
+                       /profile?age=18
+
+req.query.age        
+req.query.url 
+
+
+
+
+app.use(express.urlencoded({extended:false}))
+
+req.body
+
+
+
+___________________ dynamic params :
+
+app.post("/profile/:userId",(req,resp)=>{})
+
+req.params.userId
+req.params.userName
+
+
+
+
+app.set('view engine','ejs')
+
+resp.render('home',{send any data inside this ejs file})
+
+
+
+____________________file extension .json
+
+data.json    [
+    {
+
+    },
+    {
+
+    }
+]
+
+__________________import like this to get that data from json file
+
+import data from './data.json' with {type:'json'}
+
+
+mongosh
+use collage
+db.createCollection("students)
+db.students.insertOne({})
+dp.

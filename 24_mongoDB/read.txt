@@ -21,11 +21,11 @@ JSON-like format called BSON (Binary JSON)
 
 _____________________________________________Basic Command of MongoDB ON TERMINAL___________________________________________________________
 
-1. mongosh               to go inside mongo shell
+1. mongosh                   to go inside mongo shell
 
-2. show dbs              show list of databases
+2. show dbs                  show list of databases
 
-3. use databaseName  eg =>(college)       to create new databsae and switch on it
+3. use databaseName  eg =>(college)         to create new databsae and switch on it
 
 4. db.createCollection("eg => students")
 

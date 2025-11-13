@@ -20,7 +20,7 @@ http.createServer((request, response) => {
         </html>
         `)
     response.end();                    //current reguest end _ agr hum ya nhi likhnge to server refresh hota rahega 
-    //  process.exit()                  // whole procees end  _ after that we hate to restart server
+    //  process.exit()                  // whole procees end  _ after that we have to restart server
 }).listen(4400, () => {
     console.log("server  is runing")
 })

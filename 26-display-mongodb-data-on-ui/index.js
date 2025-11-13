@@ -25,7 +25,9 @@ const app = express()
 
 // =27=  REST API with mongodb and nodejs    this is current and suggested way to connect node with momngodb and make api
 
+
 app.set('view engine','ejs')           //  this line is related to line no 44  to show data in ejs file on UI
+
 client.connect().then((connections)=>{
 
    const db = connections.db(dbName)
