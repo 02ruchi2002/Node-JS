@@ -59,7 +59,7 @@ client.connect().then((collections) => {
         }
     })
 
-//________________________________________________ put api to update data because when we update data way api its put not post
+//______________________________________________ put api to update data because when we update data from api its put not post
 
     app.put("/ui/update/:id", (req, resp) => {
         const collection = db.collection("students")

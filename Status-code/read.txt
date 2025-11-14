@@ -1,0 +1,71 @@
+
+✅ HTTP Status Code Categories
+
+
+
+(1) Informational
+
+Request received, process continues.
+
+. 100 Continue
+
+. 101 Switching Protocols
+
+
+
+
+(2)  Success
+
+Request was successfully processed.
+
+. 200 OK – Request successful
+
+. 201 Created – New resource created (common in POST)
+
+. 204 No Content – Successfully processed, no response body
+
+
+
+
+
+(3)  Redirection
+
+Client needs to take another action.
+
+. 301 Moved Permanently
+
+. 302 Found
+
+. 304 Not Modified
+
+
+
+
+(4) Client Errors
+
+Request has an issue from the client side.
+
+. 400 Bad Request – Invalid input
+
+. 401 Unauthorized – Login required
+
+. 403 Forbidden – You are not allowed
+
+. 404 Not Found – URL doesn't exist
+
+. 409 Conflict – Data conflict (common in APIs)
+
+
+
+
+(5) Server Errors
+
+Server failed to process a valid request.
+
+. 500 Internal Server Error
+
+. 502 Bad Gateway
+
+. 503 Service Unavailable
+
+. 504 Gateway Timeout

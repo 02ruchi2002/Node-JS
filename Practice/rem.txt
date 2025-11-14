@@ -10,7 +10,7 @@ req.query.url
 
 app.use(express.urlencoded({extended:false}))
 
-req.body
+req.body                              to get form input value
 
 
 
@@ -18,7 +18,7 @@ ___________________ dynamic params :
 
 app.post("/profile/:userId",(req,resp)=>{})
 
-req.params.userId
+req.params.userId                       to get dynamic params
 req.params.userName
 
 
@@ -46,8 +46,25 @@ __________________import like this to get that data from json file
 import data from './data.json' with {type:'json'}
 
 
-mongosh
-use collage
-db.createCollection("students)
-db.students.insertOne({})
-dp.
+
+
+1. mongosh
+
+2. use collage
+
+3. db.createCollection("students")
+
+4. db.students.insertOne()                                         req.body
+
+5. db.students.find()
+
+6. db.students.findOne()                                         {_id: new ObjectId(req.params.id)}
+
+7. db.students.DeleteOne()                                         {_id: new ObjectId(req.params.id)}
+
+8. db.students.updateOne({'name':'rahul'},{$set:{'age':20}})     {_id: new ObjectId(req.params.id)},{$set:req.body}
+
+9. db.students.drop()
+
+10.db.dropDatabase()
+

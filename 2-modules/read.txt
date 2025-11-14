@@ -1,0 +1,69 @@
+
+_____________________________________________ ✅ What is a Module in Node.js?
+
+A module is a JavaScript file that contains some logic (functions, variables, classes) that can be exported 
+and used in another file.
+
+
+___________________________________________ ⭐ Types of Modules in Node.js
+
+
+1️⃣ Core (Built-in) Modules
+
+1) http → Create server                   const http = require('http')
+
+2) fs → File system operations           const fs = require('fs');
+
+3) path → Work with file paths
+
+4) os → Get OS info
+
+5) events → Event emitter
+
+6) crypto → Encryption/Hashing
+
+
+2️⃣ Local (Custom/User-defined) Modules
+
+✔ Example
+
+math.js
+
+function add(a, b) {
+  return a + b;
+}
+
+module.exports = add;
+
+
+app.js
+
+const add = require('./math');
+console.log(add(5, 3)); // 8
+
+
+3️⃣ Third-party Modules (npm modules)
+
+1) express
+
+2) mongoose
+
+3) lodash
+
+4) dotenv
+
+5) cors 
+
+=> CORS stands for Cross-Origin Resource Sharing.
+
+=> It is a security feature of browsers that controls which websites are allowed to access data from your server.
+
+=> CORS is a browser mechanism that allows or blocks requests coming from a different domain.
+
+6) nodemon (dev module) 
+
+ => Nodemon is a development tool that watches your Node.js files and restarts the server
+     automatically when you save any changes.
+
+ => Nodemon is a tool used in Node.js that automatically restarts our server whenever we make changes
+      in our code.

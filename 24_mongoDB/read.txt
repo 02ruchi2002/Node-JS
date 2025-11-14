@@ -42,6 +42,8 @@ _____________________________________________Basic Command of MongoDB ON TERMINA
 
 8. db.databaseName.updateOne({'name':'nitya'},{$set:{'age':20}})               update data             age
 
-9. db.databaseName.drop()                         to delete database
+9. db.databaseName.findOne()
 
-10 db.dropDatabase()
+. db.databaseName.drop()                         to delete database
+
+ db.dropDatabase()

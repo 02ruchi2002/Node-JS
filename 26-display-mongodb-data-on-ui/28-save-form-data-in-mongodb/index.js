@@ -9,7 +9,7 @@ const app = express()
 
 app.set('view engine', 'ejs')                              // this line related to line no 18
 
-app.use(express.urlencoded({ extended: true }))           // this line related to line no 32 to get reqest body,dynamic params
+app.use(express.urlencoded({ extended: true }))           // this line related to line no 22,32 to get reqest body,dynamic params
 app.use(express.json())                                   // this line related to make post method api
 
 client.connect().then((collections) => {
@@ -26,7 +26,9 @@ client.connect().then((collections) => {
         resp.send("data added")
     })
 
+    
     // =29=  ___________________________make post method rest api_____________________________
+
     app.post("/add-student-api", async (req, resp) => {
 
         const { name, age, email } = req.body

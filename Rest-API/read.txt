@@ -1,0 +1,83 @@
+
+🌐 What is REST?
+
+REST is an architectural style that uses the HTTP protocol (same protocol your browser uses) to send and receive data.
+
+
+A REST API allows a client (frontend, mobile app, another server) to interact with a server by making HTTP requests.
+
+HTTP => HyperText Transfer Protocol
+
+
+🔑 Key Features of a REST API
+1. Uses HTTP Methods
+
+Each method represents an action:
+
+Method                              	Meaning	                                             Example
+
+1) GET	                                   Read data	                                      get all users
+
+2) POST                                   Create data	                                      add a new user
+
+3) PUT	                                   Update data	                                     update entire user
+
+4) PATCH	                               Update partially                               	update only email
+
+5) DELETE	                               Delete data	                                      delete user
+
+
+
+____________________________________________________  ✔️ PUT vs PATCH
+
+
+1. PUT (Update the entire resource)
+
+Replaces the whole resource with the data you send.
+
+If any field is missing in the request body, that field may be reset or removed (depending on server logic).
+
+
+2. PATCH (Update part of the resource)
+
+Updates only specific fields.
+
+Missing fields are not removed.
+
+Also considered idempotent, but focuses on partial updates.
+
+
+
+
+Feature                          	 PUT	                                                       PATCH
+
+Type of update                     Full update                                               	Partial update
+
+Missing fields	                   Can be overwritten/removed	                                Stay unchanged
+
+Idempotent	                       Yes	                                                        Yes
+
+Typical use                 	   Replace entire resource	                                    Update specific fields
+
+
+
+
+_________________________________________________  💡 When to Use What?
+
+Use PUT → When you want to replace everything.
+
+Use PATCH → When you want to modify only some fields.
+
+
+
+_______________________________________________  🤔 Why use REST APIs?
+
+Easy to understand
+
+Works on all devices (web, mobile, IoT)
+
+Uses standard HTTP
+
+Fast and scalable
+
+Widely used in companies like Google, Facebook, Twitter

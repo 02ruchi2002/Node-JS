@@ -95,20 +95,63 @@
 
 // middleware 
 
+// import express from 'express'
+
+// const app = express()
+
+// function checkAge (req,resp,next) {
+//     if(!req.query.url || req.query.age < 18){
+//        resp.send("you can not access this page")
+//     }else{
+//        next()
+//     }
+// }
+
+// app.get('/profile',checkAge,(req,resp)=>{
+//      resp.send("profile page")
+// })
+
+// app.listen(3200)
+
+// _________________________________________________________________________________________________________________________
+
 import express from 'express'
+import { MongoClient, ObjectId } from 'mongodb'
+
+const dbName = 'school'
+const url = 'mongodb://localhost:27017'
+const client = new MongoClient(url)
 
 const app = express()
 
-function checkAge (req,resp,next) {
-    if(!req.query.url || req.query.age < 18){
-       resp.send("you can not access this page")
-    }else{
-       next()
-    }
-}
+client.connect().then((connections)=>{
+   const db = connections.db(dbName)
 
-app.get('/profile',checkAge,(req,resp)=>{
-     resp.send("profile page")
+   app.get('/',async(req,resp)=>{
+      const collection = db.collection('students')
+      const result = await collection.find().toArray()
+      console.log(result)
+      resp.send(result)
+   })
+   
+
+     app.get('/user/:id',async(req,resp)=>{
+      const collection = db.collection('students')
+      const result = await collection.findOne({_id:new ObjectId(req.params.id)})
+      console.log(result)
+      resp.send(result)
+   })
+
+   app.put('/update/:id',async(req,resp)=>{
+      const collection = db.collection('students')
+      const filter = {_id: new ObjectId(req.params.id)}
+      const update = {$set:req.body}
+      const result = await collection.updateOne(filter,update)
+      console.log(result)
+   })
+
+
+
 })
 
 app.listen(3200)
