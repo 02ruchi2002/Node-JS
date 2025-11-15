@@ -1,4 +1,5 @@
 // npm i express-session
+
 import express from "express";
 import session from "express-session"
 
@@ -20,6 +21,7 @@ app.post("/profile",(req,resp)=>{
 
 app.get('/',(req,resp)=>{
     const data = req.session.data
+    console.log(data)
     resp.render('home',{data})
 })
 

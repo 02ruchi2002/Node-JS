@@ -1,0 +1,8 @@
+
+npm i nodemailer                        ya package node se mail send krne mai help krta h 
+
+create gmail app to send mail
+
+send mail with form 
+
+send mail with api 
