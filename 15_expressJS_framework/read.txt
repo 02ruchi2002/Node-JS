@@ -1,4 +1,4 @@
-express js is a web application framework for nodde.js
+express js is a web application framework for node.js
  it is simplifies bulding web servers and APIs in node.js 
 
  routing

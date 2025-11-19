@@ -107,17 +107,20 @@ app.post('/update/:id',async(req,resp)=>{
    }
 })
 
-// post route for delete multiple task from data at a time in mongodb by UI
+// route for delete multiple task from data at a time in mongodb by UI
 app.post('/multi-delete',async(req,resp)=>{
    const db = await connection()
    const collection = db.collection(collectionName)
+
    let selectedTask = undefined;
    if(Array.isArray(selectedTask)){
     selectedTask = req.body.selectedTask.map((id)=>new ObjectId(id))
    }else{
     selectedTask = [new ObjectId(req.body.selectedTask)]
    }
+
    const result = await collection.deleteMany({_id:{$in:selectedTask}})
+
    if(result){
    resp.redirect('/')
    }else{
